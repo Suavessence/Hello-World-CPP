@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+void printHello(char);
+
+int main()
+{
+char choice[1];
+
+cout << "Do you want to run Hello World Function? Y or N " << endl;
+cin >> choice[1];
+
+printHello(choice[1]);
+
+return 0;
+}
+
+void printHello(char choice1)
+{
+  switch(choice1)
+  {
+    case 'Y':
+    case 'y':
+      cout << "Hello World!!!" << endl;
+      break;
+    case 'N':
+    case 'n':
+      cout << "No, okay bye!" << endl;
+      break;
+    default:
+      cout << "you didn't press Y or N. Bye!" << endl;
+      break;
+  }
+}
